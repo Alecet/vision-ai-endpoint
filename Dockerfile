@@ -11,7 +11,7 @@ WORKDIR /app
 # Copia i file nel container
 COPY requirements.txt .
 COPY vision_server.py .
-COPY yolov8n.pt .
+
 
 # Installa le dipendenze Python
 RUN pip install --upgrade pip && pip install -r requirements.txt
